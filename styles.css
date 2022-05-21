@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+.full-width-container {
+    min-height: 5000px;
+}
+
+.header-container {
+    background-image: url('media/images/background-mobile.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title-container {
+    width: 70%;
+    top: 10%;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container .title {
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: 'Odibee Sans', cursive;
+}
+
+.header-icon {
+    max-width: 100px;
+    margin: 0 auto;
+    color: white;
+}
+
+.navigation-bar-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px 0 25px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+}
+
+.logo-title {
+    color: #fff;
+    margin: 5px 0 0 -3px;
+    font-size: 40px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.menu-icon-wrapper {
+    color: #fff;
+}
+
+.button-wrapper {
+    margin: 25px 0;
+}
+
+.button-wrapper .button {
+    border: 3px solid #fff;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    background-color: transparent;
+    border-radius: 5px;
+}
