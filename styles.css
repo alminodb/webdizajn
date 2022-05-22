@@ -270,6 +270,16 @@ body, html {
     color: #fff;
 }
 
+.btn-delete {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu-icon-wrapper:hover {
+    color: #eee;
+    cursor: pointer;
+}
+
 /* Mobile view only */
 
 @media screen and (max-width: 800px) {

@@ -104,3 +104,18 @@ form.addEventListener("submit", (e) => {
         }
     }
 })
+
+let delBtn = document.querySelector("#delete-button")
+if(!paramId) {
+    delBtn.style.display = "none"
+}
+
+delBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars/${paramId}`, {
+    method: "DELETE",
+    }).then((res) => {
+        alert(`[DELETE] Status: ${res.statusText} (${res.status})`)
+        console.log("Res", res)
+    });
+})
