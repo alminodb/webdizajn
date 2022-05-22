@@ -11,11 +11,12 @@ html, body, * {
 
 body {
     overflow-x: hidden;
+    background-color: #eee;
+    scroll-behavior: smooth;
 }
 
 .full-width-container {
     width: 100%;
-    min-height: 5000px;
 }
 
 .header-container {
@@ -93,7 +94,6 @@ body {
 
 .button-wrapper .button {
     border: 3px solid #fff;
-    color: #fff;
     width: 200px;
     padding: 10px;
 
@@ -103,6 +103,11 @@ body {
 
     background-color: transparent;
     border-radius: 5px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .list-cars-container {
@@ -267,6 +272,19 @@ body {
         margin-bottom: 20px;
     }
 
+.cards {
+    display: block;
+    margin: 50px 15px;
+}
+
+/* Mobile view only */
+
+@media screen and (max-width: 800px) {
+    .cards .card {
+        margin-top: 50px;
+    }
+}
+
 /* Desktop view */
 
 @media screen and (min-width: 800px) {
@@ -289,11 +307,6 @@ body {
     }
 
     .footer-right {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .footer-distributed .footer-right p {
         display: flex;
         justify-content: flex-end;
     }
@@ -343,10 +356,19 @@ body {
 
     .main-container-full {
         width: 100%;
+        margin-top: 24px;
     }
 
     .main-container-boxed {
         width: 1320px;
         margin: auto;
+    }
+
+    .cards {
+        display: grid;
+        margin: 50px 0;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 20px;
     }
 }
