@@ -10,10 +10,13 @@ html, body, * {
 }
 
 .full-width-container {
+    width: 100%;
     min-height: 5000px;
 }
 
 .header-container {
+    width: 100%;
+    
     background-image: url('media/images/background-mobile.jpg');
     height: 100vh;
     background-position: center;
@@ -39,6 +42,7 @@ html, body, * {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    line-height: 40px;
 
     font-family: 'Odibee Sans', cursive;
 }
@@ -69,13 +73,14 @@ html, body, * {
 
 .logo-title {
     color: #fff;
-    margin: 5px 0 0 -3px;
+    margin: 3px 0 0 -3px;
     font-size: 40px;
     font-family: 'Odibee Sans', cursive;
 }
 
 .menu-icon-wrapper {
     color: #fff;
+    z-index: 11;
 }
 
 .button-wrapper {
@@ -94,4 +99,185 @@ html, body, * {
 
     background-color: transparent;
     border-radius: 5px;
+}
+
+.list-cars-container {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    z-index: 10;
+    left: 0;
+    top: 0;
+
+    display: none   ;
+}
+
+/* Desktop view */
+
+@media screen and (min-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .header-container {
+        background-image: url('media/images/cars-background.jpg');
+    }
+
+    .button-wrapper:hover .button {
+        cursor: pointer;
+        background-color: white;
+        color: #000;
+    }
+
+    .title-container {
+        top: 30%;
+    }
+
+    .footer-distributed{
+        /*margin-top: 50px;*/
+        background: #1a1a1a;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100vw;
+        font: bold 16px sans-serif;
+        text-align: left;
+        padding: 50px 60px 40px;
+        overflow: hidden;
+    }
+    
+    .footer-distributed .footer-left{
+        float: left;
+    }
+    
+    .footer-distributed h3{
+        color:  #ffffff;
+        font: normal 36px 'Roboto', cursive;
+        margin: 0 0 10px;
+        text-shadow: 1px 1px #000;
+    }
+    
+    .footer-distributed h3 span{
+        color:  #5383d3;
+        text-shadow: 1px 1px #000;
+    }
+    
+    .footer-distributed .footer-links{
+        color:  #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    
+    .footer-distributed .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+    
+    .footer-distributed .footer-company-name{
+        color:  #eee;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer-distributed .footer-icons{
+        margin-top: 40px;
+    }
+    
+    .footer-distributed .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+    
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+    
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+    
+    .footer-distributed .footer-right{
+        float: right;
+    }
+    
+    .footer-distributed .footer-right p{
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 42px 0 0;
+        color: #ffffff;
+    }
+    
+    .footer-distributed form{
+        display: inline-block;
+    }
+    
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color:  #1f2022;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+    
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color:  #d1d2d2;
+    
+        width: 400px;
+        padding: 18px;
+    }
+    
+    .footer-distributed ::-webkit-input-placeholder {
+        color:  #5c666b;
+    }
+    
+    .footer-distributed ::-moz-placeholder {
+        color:  #5c666b;
+        opacity: 1;
+    }
+    
+    .footer-distributed :-ms-input-placeholder{
+        color:  #5c666b;
+    }
+    
+    
+    .footer-distributed form input{
+        height: 55px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-distributed form textarea{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-distributed form button{
+        border-radius: 3px;
+        background-color:  #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+    
+    .footer-links a:hover{
+        color: #5383d3;
+    }
+    
+    .footer-right button:hover{
+        background-color: #1f2022;
+        cursor: pointer;
+    }
+
 }
