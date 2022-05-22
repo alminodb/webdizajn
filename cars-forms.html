@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>WD Cars - Project</title>
+</head>
+<body style="background-color: #333;">
+    <div class="full-width-container">
+        <div class="navigation-bar-wrapper">
+            <a href="/index.html">
+                <div class="logo-wrapper">
+                    <img src="media/images/car-logo.jpg" class="logo-icon" />
+                    <h2 class="logo-title">CarForYou</h2>
+                </div>
+            </a>
+            <i class="fa fa-bars menu-icon-wrapper" style="font-size: 24px;"></i>
+        </div>
+        <div class="forms-main-container">
+            <div class="main-container-boxed">
+                <form class="car-form" id="car-form">
+                    <div class="mb-3">
+                      <label for="manufacturer" class="form-label">Manufacturer</label>
+                      <input type="text" class="form-control" id="manufacturer">
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Car name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image Url</label>
+                        <input type="text" class="form-control" id="image">
+                      </div>
+                      <div class="mb-3">
+                        <label for="price" class="form-label">Price (BAM)</label>
+                        <input type="number" class="form-control" id="price" min="0">
+                      </div>
+                      <div class="mb-3">
+                        <label for="year" class="form-label">Year</label>
+                        <input type="number" class="form-control" id="year" min="1950" max="2022">
+                      </div>
+                    <button type="submit" class="btn btn-primary" id="form-submit"f>Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./form.js"></script>
+</html>

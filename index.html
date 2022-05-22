@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>WD Cars - Project</title>
 </head>
-<body>
-    <div class="full-width-container">
-        <div class="list-cars-container">
-        </div>
+<body style="background-color: #eee;">
+    <div class="offcanvas-container">
+    </div>
 
+    <div class="full-width-container">
         <div class="header-container">
             <div class="navigation-bar-wrapper">
                 <div class="logo-wrapper">
@@ -26,12 +26,12 @@
             <div class="title-container">
                 <h1 class="title">Find the right car for you</h1>
                 <div class="button-wrapper">
-                    <button class="button"><a href="#cards">Shop cars</a></button>
+                    <a href="#main-container"><button class="button">Shop cars</button></a>
                 </div>
             </div>
         </div>
 
-        <div class="main-container-full">
+        <div class="main-container-full" id="main-container">
             <div class="main-container-boxed">
                 <div class="cards" id="cards">
                     <div class="card">
@@ -39,47 +39,6 @@
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img class="card-img-top" src="media/images/cars-background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img class="card-img-top" src="media/images/cars-background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img class="card-img-top" src="media/images/cars-background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img class="card-img-top" src="media/images/cars-background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img class="card-img-top" src="media/images/cars-background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                       </div>
                   </div>
@@ -114,4 +73,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./main.js">
+</script>
 </html>
